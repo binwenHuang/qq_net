@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qq.Activity.ForgetActivity"
+    android:orientation="vertical">
+    <include layout="@layout/activity_base"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="用户名：" />
+
+                <EditText
+                    android:id="@+id/user_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入账号" />
+            </TableRow>
+
+            <TableRow >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="验证码：" />
+
+                <TextView
+                    android:id="@+id/yanzhen"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:text="237482" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="输入验证码：" />
+                <EditText
+                    android:id="@+id/yanzhen_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入验证码" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="新密码：" />
+                <EditText
+                    android:id="@+id/pwd_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入新密码" />
+            </TableRow>
+
+            <TableRow >
+
+                <TextView />
+
+                <LinearLayout >
+                    <Button
+                        android:id="@+id/putup"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="提交" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

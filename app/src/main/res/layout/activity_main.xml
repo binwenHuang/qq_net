@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".qq.Activity.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@mipmap/top_banner"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/head_self"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/h17">
+        </ImageView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="20sp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/forward_final">
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/login_bottom_bg"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ll_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_msg"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/tab_msg_pressed"
+                >
+            </ImageView>
+            <TextView
+                android:id="@+id/tv_tab_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="消息">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ll_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_user"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:src="@drawable/main_tab_user"
+                android:layout_marginTop="3dp"
+                >
+            </ImageView>
+            <TextView
+                android:id="@+id/tv_tab_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="好友">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ll_dongtai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_dongtai"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:src="@drawable/main_tab_dt"
+                android:layout_marginTop="3dp"
+                >
+            </ImageView>
+            <TextView
+                android:id="@+id/tv_tab_dongtai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="动态">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
